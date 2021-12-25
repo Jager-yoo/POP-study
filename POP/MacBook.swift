@@ -18,12 +18,20 @@ import Foundation
 
 struct MacBook {
     
-    let chargeableWattPerHour: WattPerHour
-    var currentBattery: WattPerHour
-    let maximumWattPerHour: WattPerHour = 100
+    private let chargeableWattPerHour: WattPerHour
+    private let currentBattery: WattPerHour
+    private let maximumWattPerHour: WattPerHour = 100
     
     func chargeBattery(charger: Chargeable) {
-        let chargingTime = (maximumWattPerHour - currentBattery) / chargeableWattPerHour
-        print("충전에 걸린 시간 : \(chargingTime)시간")
+        let convertedWattPerHour = charger.convert(chargeableWattPerHour: self.chargeableWattPerHour)
+        let chargingTime = (maximumWattPerHour - currentBattery) / convertedWattPerHour
+        print("\(charger) 사용하여 충전에 걸린 시간 : \(chargingTime) 시간")
+        print("계산 과정 : (\(maximumWattPerHour) - \(currentBattery)) / \(convertedWattPerHour) = \(chargingTime)")
+        print("---")
+    }
+    
+    init(chargeableWattPerHour: WattPerHour, currentBattery: WattPerHour) {
+        self.chargeableWattPerHour = chargeableWattPerHour
+        self.currentBattery = currentBattery
     }
 }

@@ -18,7 +18,7 @@ import Foundation
 
 struct Charger: Chargeable {
     
-    var maximumWattPerHour: WattPerHour
+    let maximumWattPerHour: WattPerHour
     
     func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour {
         if self.maximumWattPerHour > chargeableWattPerHour {
@@ -27,10 +27,8 @@ struct Charger: Chargeable {
             return self.maximumWattPerHour
         }
     }
+    
+    init(maximumWattPerHour: WattPerHour) {
+        self.maximumWattPerHour = maximumWattPerHour
+    }
 }
-
-let appleWatchCharger = Charger(maximumWattPerHour: 5)
-let iPhoneCharger = Charger(maximumWattPerHour: 18)
-let iPadCharger = Charger(maximumWattPerHour: 30)
-let macBookCharger = Charger(maximumWattPerHour: 96)
-let macBookHighSpeedCharger = Charger(maximumWattPerHour: 106)
