@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		C13FC5892777265D00369FAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC5882777265D00369FAB /* main.swift */; };
 		C13FC590277726B000369FAB /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC58F277726B000369FAB /* protocol.swift */; };
+<<<<<<< HEAD
 		C13FC5922777289C00369FAB /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC5912777289C00369FAB /* MacBook.swift */; };
+=======
+		C13FC59427772A8D00369FAB /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC59327772A8D00369FAB /* Charger.swift */; };
+>>>>>>> feat-Charger
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +32,11 @@
 		C13FC5852777265D00369FAB /* POP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POP; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13FC5882777265D00369FAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C13FC58F277726B000369FAB /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C13FC5912777289C00369FAB /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
+=======
+		C13FC59327772A8D00369FAB /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+>>>>>>> feat-Charger
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +71,11 @@
 			children = (
 				C13FC5882777265D00369FAB /* main.swift */,
 				C13FC58F277726B000369FAB /* protocol.swift */,
+<<<<<<< HEAD
 				C13FC5912777289C00369FAB /* MacBook.swift */,
+=======
+				C13FC59327772A8D00369FAB /* Charger.swift */,
+>>>>>>> feat-Charger
 			);
 			path = POP;
 			sourceTree = "<group>";
@@ -127,7 +139,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13FC5892777265D00369FAB /* main.swift in Sources */,
+<<<<<<< HEAD
 				C13FC5922777289C00369FAB /* MacBook.swift in Sources */,
+=======
+				C13FC59427772A8D00369FAB /* Charger.swift in Sources */,
+>>>>>>> feat-Charger
 				C13FC590277726B000369FAB /* protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
