@@ -25,6 +25,7 @@ struct MacBook {
     func chargeBattery(charger: Chargeable) {
         let convertedWattPerHour = charger.convert(chargeableWattPerHour: self.chargeableWattPerHour)
         let chargingTime = Double(maximumWattPerHour - currentBattery) / Double(convertedWattPerHour)
+        
         print("\(charger) 사용하여 충전에 걸린 시간 : \(chargingTime.roundedOff) 시간")
         print("계산 과정 : (\(maximumWattPerHour) - \(currentBattery)) / \(convertedWattPerHour) = \(chargingTime)")
         print("---")
