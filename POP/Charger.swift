@@ -20,19 +20,9 @@ struct Charger: Chargeable, Portable {
     
     let maximumWattPerHour: WattPerHour
     
-    func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour {
-        return min(self.maximumWattPerHour, chargeableWattPerHour)
-        
-        /*
-        if self.maximumWattPerHour > chargeableWattPerHour {
-            return chargeableWattPerHour
-        } else {
-            return self.maximumWattPerHour
-        }
-        */
-    }
-    
     init(maximumWattPerHour: WattPerHour) {
         self.maximumWattPerHour = maximumWattPerHour
     }
+    
+    // 이니셜라이저는 기본 구현(Default Implementation) 으로 못 데려가는지?
 }
