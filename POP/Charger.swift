@@ -20,9 +20,7 @@ struct Charger: Chargeable, Portable {
     
     let maximumWattPerHour: WattPerHour
     
-    init(maximumWattPerHour: WattPerHour) {
-        self.maximumWattPerHour = maximumWattPerHour
-    }
-    
-    // 이니셜라이저는 기본 구현(Default Implementation) 으로 못 데려가는지?
+    // 이니셜라이저는 기본 구현(Default Implementation) 으로 못 데려가는지? -> 못 데려가
+    // 이니셜라이저 -> 타입을 인스턴스로 바꾸면서 메모리에 올리는 것.
+    // 프로토콜은 구체적인 인스턴스가 될 수 없다.
 }

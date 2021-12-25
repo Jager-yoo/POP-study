@@ -24,4 +24,4 @@ extension Chargeable {
     }
 }
 
-// 기본 구현(Default Implementation) 할 때는 보통 같은 파일 안에 모아두는지?
+// 기본 구현(Default Implementation) 할 때는 보통 같은 파일 안에 모아두는지? -> 경우에 따라 다르다!

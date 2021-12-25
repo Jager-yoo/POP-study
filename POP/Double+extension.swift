@@ -17,3 +17,5 @@ extension Double {
         return numberFormatter.string(for: self) ?? "변환 실패"
     }
 }
+
+// extension 은 '타입'이 아니다.
