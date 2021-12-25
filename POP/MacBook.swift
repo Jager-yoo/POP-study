@@ -16,7 +16,7 @@ import Foundation
  chargeBattery(charger: Chargeable) : 충전기를 활용해 배터리를 완전히 충전한 뒤 충전에 걸린 시간을 print 합니다.
  */
 
-struct MacBook {
+struct MacBook: Portable {
     
     private let chargeableWattPerHour: WattPerHour
     private var currentBattery: WattPerHour

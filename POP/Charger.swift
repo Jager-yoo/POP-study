@@ -16,7 +16,7 @@ import Foundation
  5Wh 애플워치 충전기, 18Wh 아이폰 고속 충전기, 30Wh 아이패드 충전기, 96Wh 맥북 충전기, 106Wh 맥북 충전기
  */
 
-struct Charger: Chargeable {
+struct Charger: Chargeable, Portable {
     
     let maximumWattPerHour: WattPerHour
     

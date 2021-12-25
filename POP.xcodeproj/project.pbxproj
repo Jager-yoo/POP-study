@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C13FC5892777265D00369FAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC5882777265D00369FAB /* main.swift */; };
-		C13FC590277726B000369FAB /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC58F277726B000369FAB /* protocol.swift */; };
+		C13FC590277726B000369FAB /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC58F277726B000369FAB /* Chargeable.swift */; };
 		C13FC5922777289C00369FAB /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC5912777289C00369FAB /* MacBook.swift */; };
 		C13FC59427772A8D00369FAB /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC59327772A8D00369FAB /* Charger.swift */; };
 		C13FC5962777395800369FAB /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC5952777395800369FAB /* Double+extension.swift */; };
+		C13FC59C27773F3600369FAB /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC59B27773F3600369FAB /* Bag.swift */; };
+		C13FC59F27773FAB00369FAB /* Portable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13FC59E27773FAB00369FAB /* Portable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,10 +31,12 @@
 /* Begin PBXFileReference section */
 		C13FC5852777265D00369FAB /* POP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POP; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13FC5882777265D00369FAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		C13FC58F277726B000369FAB /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		C13FC58F277726B000369FAB /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
 		C13FC5912777289C00369FAB /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
 		C13FC59327772A8D00369FAB /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
 		C13FC5952777395800369FAB /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
+		C13FC59B27773F3600369FAB /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		C13FC59E27773FAB00369FAB /* Portable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +70,22 @@
 			isa = PBXGroup;
 			children = (
 				C13FC5882777265D00369FAB /* main.swift */,
-				C13FC58F277726B000369FAB /* protocol.swift */,
 				C13FC5912777289C00369FAB /* MacBook.swift */,
 				C13FC59327772A8D00369FAB /* Charger.swift */,
+				C13FC59B27773F3600369FAB /* Bag.swift */,
 				C13FC5952777395800369FAB /* Double+extension.swift */,
+				C13FC59D27773F9A00369FAB /* Protocol */,
 			);
 			path = POP;
+			sourceTree = "<group>";
+		};
+		C13FC59D27773F9A00369FAB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C13FC58F277726B000369FAB /* Chargeable.swift */,
+				C13FC59E27773FAB00369FAB /* Portable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 				C13FC5962777395800369FAB /* Double+extension.swift in Sources */,
 				C13FC5922777289C00369FAB /* MacBook.swift in Sources */,
 				C13FC59427772A8D00369FAB /* Charger.swift in Sources */,
-				C13FC590277726B000369FAB /* protocol.swift in Sources */,
+				C13FC59C27773F3600369FAB /* Bag.swift in Sources */,
+				C13FC59F27773FAB00369FAB /* Portable.swift in Sources */,
+				C13FC590277726B000369FAB /* Chargeable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

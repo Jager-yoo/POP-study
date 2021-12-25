@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - 충전 실험
 let appleWatchCharger = Charger(maximumWattPerHour: 5)
 let iPhoneCharger = Charger(maximumWattPerHour: 18)
 let iPadCharger = Charger(maximumWattPerHour: 30)
@@ -22,3 +23,11 @@ myMacBook.chargeBattery(charger: iPhoneCharger)
 myMacBook.chargeBattery(charger: iPadCharger)
 myMacBook.chargeBattery(charger: macBookCharger)
 myMacBook.chargeBattery(charger: macBookHighSpeedCharger)
+
+// MARK: - 가방에 물건 넣기
+var gucciBag = Bag()
+
+gucciBag.put(item: myMacBook)
+gucciBag.put(item: macBookHighSpeedCharger)
+
+gucciBag.display()
