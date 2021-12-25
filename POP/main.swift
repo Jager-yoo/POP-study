@@ -18,11 +18,11 @@ let macBookHighSpeedCharger = Charger(maximumWattPerHour: 106)
 
 var myMacBook = MacBook(chargeableWattPerHour: 67, currentBattery: 20)
 
-myMacBook.chargeBattery(charger: appleWatchCharger)
-myMacBook.chargeBattery(charger: iPhoneCharger)
-myMacBook.chargeBattery(charger: iPadCharger)
-myMacBook.chargeBattery(charger: macBookCharger)
-myMacBook.chargeBattery(charger: macBookHighSpeedCharger)
+myMacBook.chargeBattery(using: appleWatchCharger)
+myMacBook.chargeBattery(using: iPhoneCharger)
+myMacBook.chargeBattery(using: iPadCharger)
+myMacBook.chargeBattery(using: macBookCharger)
+myMacBook.chargeBattery(using: macBookHighSpeedCharger)
 
 // MARK: - 가방에 물건 넣기
 var gucciBag = Bag()

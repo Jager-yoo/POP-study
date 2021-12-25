@@ -22,7 +22,7 @@ struct MacBook: Portable {
     private var currentBattery: WattPerHour
     private let maximumWattPerHour: WattPerHour = 100
     
-    mutating func chargeBattery(charger: Chargeable) {
+    mutating func chargeBattery(using charger: Chargeable) {
         let convertedWattPerHour = charger.convert(chargeableWattPerHour: self.chargeableWattPerHour)
         let chargingTime = Double(maximumWattPerHour - currentBattery) / Double(convertedWattPerHour)
         currentBattery = maximumWattPerHour
